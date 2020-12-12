@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <title>Student</title>
+
+</head>
+
+<body>
+  <a href="#" title="logo">
+    <i class="fas fa-chart-bar logo"></i>
+  </a>
+  <!-- nav -->
+  <nav class="fixed-nav-bar">
+    <!-- large screen -->
+    <div class="top-links">
+      <a href="#">Service</a>
+      <a href="#">Web</a>
+      <a href="#">Conatct</a>
+      <a href="#" class="profile-pic" title="profile"><img src="img/student.png" alt=""></a>
+    </div>
+    <!-- small screen -->
+    <div class="sidenav" id="sidenav">
+      <a title="close" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+
+      <a href="#">Mark Attendence</a>
+      <a href="#">View Previous Attendence</a>
+
+      <hr class="side-line">
+
+      <a href="#">Add Course</a>
+      <a href="#">Edit Course</a>
+      <a href="#">Delete Course</a>
+
+      <hr class="side-line">
+
+      <form action="logout.php">
+        <input type="submit" name="logout" class="logout-btn" value="logout">
+      </form>
+
+    </div>
+    <span title="menu" onclick="openNav()" class="bars"><i class="fas fa-bars"></i></span>
+  </nav>
+  <!-- nav end -->
+
+  <section class="sect1">
+    <h3 class="stud-name">Please Fill Below Form For Leave Request</h3>
+    <hr class="side-line">
+
+    <!-- 
+      <table class="data-table">
+
+      <thead>
+        <th>S.No</th>
+        <th>Month</th>
+        <th>Date</th>
+        <th>Day</th>
+        <th>Status</th>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>12</td>
+          <td>02</td>
+          <td>Monday</td>
+          <td><span class="absent">Absent</span></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>12</td>
+          <td>02</td>
+          <td>Monday</td>
+          <td><span class="present">Present</span></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>12</td>
+          <td>02</td>
+          <td>Monday</td>
+          <td>Absent</td>
+        </tr>
+      </tbody>
+
+    </table> -->
+
+    <!-- <table class="data-table">
+
+      <thead>
+        <th>Month</th>
+        <th>Date</th>
+        <th>Day</th>
+        <th>Mark Attendence</th>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>July</td>
+          <td>03</td>
+          <td>Friday</td>
+          <td class="btn-td">
+            <button class="mark-btn" onclick="showAlert('success', 'attendence marked'); hideBtn()">Mark</button>
+          </td>
+        </tr>
+      </tbody>
+
+    </table> -->
+
+    <!-- <div class="user-img">
+      <img src="img/elon.jpg" alt="">
+    </div>
+
+    <div class="user-info">
+
+      <div class="user-name">
+        <i class="fas fa-user"></i>
+        <i class="far fa-user"></i>
+        <label>Name</label><br>
+        <p>Johar Khan Afridi</p>
+      </div>
+
+      <div class="school">
+        <i class="fas fa-school"></i>
+        <i class="far fa-school"></i>
+        <label>College</label><br>
+        <p>Comsats International University</p>
+      </div>
+
+      <div class="user-home">
+        <i class="fas fa-home"></i>
+        <i class="far fa-home"></i>
+        <label>Postal Address</label><br>
+        <p>G-10/4 main road, Islamabad</p>
+      </div>
+
+      <div class="user-at-email">
+        <i class="fas fa-at"></i>
+        <i class="far fa-at"></i>
+        <label>Email</label><br>
+        <p>example@gmail.com</p>
+      </div>
+
+      <div class="user-rollNo">
+        <i class="fas fa-scroll"></i>
+        <i class="far fa-clipboard-list"></i>
+        <label>Roll Number</label><br>
+        <p>100</p>
+      </div>
+
+      <hr class="side-line">
+
+      <div class="upload-img">
+        <p>Change Profile Picture</p>
+        <hr>
+        <form action="" method="POST" enctype="multipart/form-data">
+          <input type="file" name="imgToUpload" id="fileToUpload">
+          <input type="submit" value="Upload Image" name="uploadimg">
+        </form>
+      </div>
+
+    </div> -->
+
+    <div class="email-container">
+      <form action="" method="POST">
+        <div class="email-name">
+          <input type="text" name="name" placeholder="Enter your name">
+        </div>
+        <div class="email-rollNo">
+          <input type="text" name="rollNo" placeholder="Enter your roll no">
+        </div>
+        <div class="email-email">
+          <input type="email" name="email" placeholder="Enter your email">
+        </div>
+        <div class="email-subject">
+          <input type="text" name="subject" placeholder="Enter leave subject">
+        </div>
+        <div class="email-message">
+          <textarea name="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+        </div>
+        <div class="email-btn">
+          <input type="submit" name="submit">
+        </div>
+      </form>
+    </div>
+
+
+  </section>
+
+  <script src="js/app.js"></script>
+  <script src="js/jquery.js"></script>
+</body>
+
+</html>
