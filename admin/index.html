@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <title>Admin</title>
+</head>
+
+<body>
+  <a href="#" title="logo">
+    <i class="fas fa-chart-bar logo"></i>
+  </a>
+  <!-- nav -->
+  <nav class="fixed-nav-bar">
+    <!-- large screen -->
+    <div class="top-links">
+      <a href="#">About</a>
+      <a href="#">Service</a>
+      <a href="#">Web</a>
+      <a href="#">Conatct</a>
+    </div>
+    <!-- small screen -->
+    <div class="sidenav" id="sidenav">
+      <a title="close" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+      <a href="index.php">Home</a>
+      <a href="leaves.php?source=view">Leave Requests</a>
+      <hr class="side-line">
+
+      <a href="students.php?source=view">View All Students</a>
+      <a href="students.php?source=add">Add Student</a>
+      <a href="students.php?source=grades">Student Grades</a>
+
+      <hr class="side-line">
+
+      <a href="attendence.php?source=view">View Attendence</a>
+      <a href="attendence.php?source=add">Add Attendence</a>
+
+      <hr class="side-line">
+
+      <a href="#">Add Course</a>
+      <a href="#">Edit Course</a>
+      <a href="#">Delete Course</a>
+
+      <hr class="side-line">
+
+      <form action="../logout.php" method="POST">
+        <input type="submit" name="logout" class="logout-btn" value="logout">
+      </form>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    </div>
+    <span title="menu" onclick="openNav()" class="bars"><i class="fas fa-bars"></i></span>
+  </nav>
+  <!-- nav end -->
+
+  <section class="stud-data">
+
+    <!-- <div class="col totalUsers">
+      <i class="fas fa-users"></i>
+      <h1>3e45</h1>
+      <p>Total Students</p>
+      <hr>
+      <a href="#">click here for details <i class="fas fa-chevron-right"></i></a>
+    </div>
+
+    <div class="col newUsers">
+      <i class="fas fa-user-plus"></i>
+      <h1>345</h1>
+      <p>New Students</p>
+      <hr>
+      <a href="#">click here for details <i class="fas fa-chevron-right"></i></a>
+    </div>
+
+    <div class="col totalCourses">
+      <i class="fas fa-book"></i>
+      <h1>3e45</h1>
+      <p>Total Courses</p>
+      <hr>
+      <a href="#">click here for details <i class="fas fa-chevron-right"></i></a>
+    </div> -->
+
+    <h1 class="stud-title">Respond To Leave Request</h1>
+    <hr class="side-line">
+
+    <!-- <div class="email-table">
+      <table class="emails">
+
+        <tr>
+          <th>S.No</th>
+          <th>Name</th>
+          <th>Roll No</th>
+          <th>Email</th>
+          <th>Subject</th>
+          <th>Message</th>
+          <th>Date</th>
+        </tr>
+
+        <tr title="click to open">
+          <td>1</td>
+          <td class="name">Bilal Khan</td>
+          <td>23</td>
+          <td>bilal@gmail.com</td>
+          <td class="subject">Urgent Piece Of Work</td>
+          <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit...</td>
+          <td>12/12/2020</td>
+        </tr>
+      </table>
+    </div> -->
+
+    <div class="message-container">
+
+      <div class="inbox-date">
+        <p>Dated</p>
+        <span>23/12/45</span>
+      </div>
+
+      <div>
+        <p>From</p>
+        <span>Johar</span>
+      </div>
+
+      <div class="inbox-date">
+        <p>Dated</p>
+        <span>23/12/45</span>
+      </div>
+
+      <div>
+        <p>Email</p>
+        <span>Johar@gmail.com</span>
+      </div>
+
+      <div>
+        <p>Subject</p>
+        <span>Urgent Piece Of Work</span>
+      </div>
+
+      <div class="inbox-message">
+        <p>Message</p>
+        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure dolor sit quasi, quam dolorem animi,
+          laudantium illum fuga dolores minima eum in alias iusto, inventore voluptates expedita eligendi pariatur
+          quia!</span>
+      </div>
+
+      <form action="" method="POST">
+        <input type="submit" name="approve" value="Approve" id="">
+        <input type="submit" name="unapprove" value="Reject" id="">
+      </form>
+
+    </div>
+
+  </section>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
