@@ -1,4 +1,7 @@
-# AMS
+# AMS (Attendence Managemant System)
+
+[DEMO](http://bruh.ezyro.com/ams/index.php)
+
 ### Functionalities
 
 #### STUDENT
